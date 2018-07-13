@@ -8,7 +8,7 @@ class ProdFood(models.Model):
     prod_code = models.CharField(max_length=20)
     prod_name = models.CharField(max_length=200)
     prod_price = models.FloatField()
-    prod_image = models.ImageField(default='kkkk')
+    prod_image = models.CharField(default='kkkk', max_length=256)
     prod_gallery = models.CharField(max_length=200)
 
     class Meta:
